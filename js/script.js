@@ -5,7 +5,7 @@ var todaysDate = stripTimeFromDate(new Date());
 $(document).ready(function() {
 
   if (!localStorage.cineworldData) {
-    setTitle('Loading data from CineWorld...');
+    setTitle('Loading data from Cineworld...');
     getDataFromCineWorld();
   } else {
     cineworldData = JSON.parse(localStorage.cineworldData);
