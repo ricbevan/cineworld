@@ -1,0 +1,16 @@
+#data ul {
+  padding-left: 0px;
+}
+
+.cin-link, #back-to-cinemas {
+  cursor: pointer;
+}
+
+.cin-performance-film {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cin-performance-times, #days {
+  margin-bottom: 70px !important;
+}

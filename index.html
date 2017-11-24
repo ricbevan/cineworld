@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="uk-background-secondary">
+  <head>
+    <title>Cineworld</title>
+    <link rel="stylesheet" href="css/frameworks/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+
+    <div class="uk-container">
+      <h1 id="title" class="uk-heading-primary uk-light">Loading...</h1>
+      <span id="back-to-cinemas" class="uk-light uk-hidden">Back to cinemas</span>
+      <ul id="days" class="uk-subnav uk-subnav-pill uk-hidden"></ul>
+      <ul id="data" class="uk-list"></ul>
+    </div>
+
+    <div id="modal-full" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+          <div id="film-poster" class="uk-background-cover" uk-height-viewport></div>
+          <div class="uk-padding-large">
+            <h2 id="film-title" class="uk-h1"></h1>
+            <p id="film-running-time" class="uk-article-meta"></p>
+            <p id="film-release-date" class="uk-article-meta"></p>
+            <p id="film-synopsis"></p>
+            <p id="film-cast" class="uk-article-meta"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/frameworks/jquery.min.js"></script>
+    <script src="js/frameworks/uikit.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
