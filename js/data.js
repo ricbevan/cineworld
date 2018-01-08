@@ -53,8 +53,8 @@ function getDataFromCineWorld() {
         cineworldData[$(this)[0].nodeName] = group;
       });
 
-      cineworldData['lastUpdated'] = new Date().toString();
-      localStorage.cineworldData = JSON.stringify(cineworldData);
+      // cineworldData['lastUpdated'] = new Date().toString();
+      // localStorage.cineworldData = JSON.stringify(cineworldData);
 
       renderPage();
     }

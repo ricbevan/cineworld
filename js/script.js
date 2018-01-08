@@ -4,18 +4,20 @@ var todaysDate = stripTimeFromDate(new Date());
 
 $(document).ready(function() {
 
-  if (!localStorage.cineworldData) {
-    setTitle('Loading data from Cineworld...');
-    getDataFromCineWorld();
-  } else {
-    cineworldData = JSON.parse(localStorage.cineworldData);
+  // if (!localStorage.cineworldData) {
+  //   setTitle('Loading data from Cineworld...');
+  //   getDataFromCineWorld();
+  // } else {
+  //   cineworldData = JSON.parse(localStorage.cineworldData);
+  //
+  //   if (!within1Day(cineworldData['lastUpdated'])) { // if cineworld data is over 1 day old
+  //     getDataFromCineWorld();
+  //   }
+  //
+  //   renderPage();
+  // }
 
-    if (!within1Day(cineworldData['lastUpdated'])) { // if cineworld data is over 1 day old
-      getDataFromCineWorld();
-    }
-
-    renderPage();
-  }
+  getDataFromCineWorld();
 
   $('#data').on('click', function(e) {
     if ($(e.target).data('cinema-id')) {
